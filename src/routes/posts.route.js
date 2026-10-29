@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { PostController } from "../controller/post.controller.js";
+import { postsController } from "../controller/post.controller.js";
 
 export const postsRouter = Router();
 
-postsRouter.get("/", PostsController.getAll);
-postsRouter.get("/:id", PostsController.getById);
-postsRouter.post("/", PostsController.create);
-postsRouter.delete("/:id", PostsController.delete);
-postsRouter.put("/:id", PostControllerostsController.updatePut);
-postsRouter.patch("/:id", PostsController.updatePatch);
+postsRouter.get("/", postsController.getAll);
+postsRouter.get("/:id", postsController.getById);
+postsRouter.post("/", postsController.create);
+postsRouter.delete("/:id", postsController.delete);
+postsRouter.put("/:id", postsController.updatePut);
+postsRouter.patch("/:id", postsController.updatePatch);

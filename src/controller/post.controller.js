@@ -1,6 +1,7 @@
 import { postsService } from "../services/posts.services.js";
 
-class PostsController {
+export class PostsController {
+
     async getAll(req, res) {
         try {
             const post = await postsService.getall();
